@@ -117,6 +117,7 @@ function getPasswordOptions() {
       "Please click ok to confirm include lower case character");
     let hasUpperChar = confirm(
       "Please click ok to confirm include upper case character");
+      // check if the character contains the special character , number , upper and lower case character 
     if(hasLowerChar===false&& 
       hasUpperChar===false&&
       hasSpecialChar===false&&
@@ -157,7 +158,12 @@ function getRandom(arr) {
     let randomIndex = Math.floor(Math.random()* arr.length);
     let randomValue = arr[randomIndex];
     return randomValue;
+    
 }
+
+
+
+
 
 // Function to generate password with user input
 function generatePassword() {
